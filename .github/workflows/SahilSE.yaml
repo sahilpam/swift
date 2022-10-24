@@ -12,6 +12,7 @@ jobs:
       - name: Run local server
         working-directory: ./MyLibrary
         run: | 
+          npm install -g nodemon
           nodemon app.js &
       - name: Build
         working-directory: ./MyLibrary
